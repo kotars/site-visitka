@@ -1,0 +1,9 @@
+.profile__description{
+    @include font(400,2.4rem,117%);
+    margin-top: 3rem;
+}
+@media (max-width:48em){
+    .profile__description{
+        @include font(400,3.4rem,117%);
+    }
+}

@@ -1,0 +1,10 @@
+.form__btn{
+    width: 100%;
+    border-radius: 3rem;
+    border: .3rem solid rgba(0,0,0,0);
+    padding: 2rem 0;
+    background: black;
+    @include font(300, 2rem, 1.33);
+    color: white;
+    text-align: center;
+}

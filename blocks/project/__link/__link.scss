@@ -1,0 +1,11 @@
+.project__link {
+    @include font(600, 3rem, 117%);
+    padding: 1rem;
+    margin-top: 2rem;
+    &:hover{
+      color: white;
+      background: black;
+      transition: 1s;
+    }
+  }
+  

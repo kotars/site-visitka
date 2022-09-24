@@ -1,0 +1,12 @@
+.advantage{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+@media (max-width:48em){
+    .advantage{
+    padding: 1rem;
+    }   
+}

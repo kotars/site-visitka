@@ -1,0 +1,29 @@
+.advantage__card{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 8rem;
+    &:nth-child(2n){
+        margin-left: 60rem;
+    }
+    &:last-child{
+        .advantage__back{
+            margin-bottom: 4rem;
+          }
+    }
+}
+@media (max-width:48em){
+    .advantage__card{
+        margin-bottom: 4rem;
+        &:nth-child(2n){
+            margin-left: 0rem;
+            margin-top: 0rem;
+        }
+        
+        &:last-child{
+            .advantage__back{
+                margin-bottom: 2rem;
+              }
+        }
+    }   
+}

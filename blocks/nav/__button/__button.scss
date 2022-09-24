@@ -1,0 +1,23 @@
+
+.nav__button,
+.nav__button::before,
+.nav__button::after {
+  display: block;
+  background-color: black;
+  position: absolute;
+  height: .8rem;
+  width: 6rem;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: .4rem;
+}
+
+.nav__button::before {
+  content: "";
+  margin-top: -1.6rem;
+}
+
+.nav__button::after {
+  content: "";
+  margin-top: 1.6rem;
+}
+

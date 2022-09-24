@@ -1,0 +1,28 @@
+.menu-gamburg__ul > li {
+  margin: 0 10rem;
+  overflow: hidden;
+}
+
+@media (max-width: 48em) {
+  .menu-gamburg__ul {
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    margin-top: 9rem;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-gamburg__ul > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    // padding: 5rem 0;
+    width: 100%;
+    background-color: white;
+  }
+}

@@ -1,0 +1,9 @@
+.advantage__header{
+    @include font(700,3.6rem,117%);
+    margin-bottom: 3rem;
+}
+@media (max-width:48em){
+    .advantage__header{
+        @include font(700,4.6rem,117%);
+    }  
+}

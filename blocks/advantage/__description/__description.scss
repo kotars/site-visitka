@@ -1,0 +1,9 @@
+.advantage__description{
+    @include font(400,2.4rem,117%);
+}
+
+@media (max-width:48em){
+    .advantage__description{
+        @include font(400,3.4rem,117%);
+    }  
+}

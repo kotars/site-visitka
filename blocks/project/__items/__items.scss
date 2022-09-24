@@ -1,0 +1,14 @@
+.project__items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem 5rem;
+        
+}
+
+@media (max-width:48em) {
+    .project__items{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0rem;
+    }
+}

@@ -1,0 +1,34 @@
+.nav__item{
+    @include font(400, 1.8rem, 117%);
+    padding: 1rem;
+    border: .2rem solid white;
+
+
+    &:not(:last-child){
+        margin-right: 3rem;
+    }
+}
+.nav__item:hover{
+    border-radius: 5rem;
+    border: .2rem solid black;
+    color: #fff;
+    background: #000;
+}
+@media (max-width:48em) {
+    .nav__item{
+        @include font(400, 2.8rem, 117%);
+        padding: 1rem;
+        border-bottom: 0rem solid black;
+    
+    
+        &:not(:last-child){
+            margin-right: 0rem;
+        }
+    }
+    .nav__item:hover{
+        border-radius: 0rem;
+        border: none;
+        color: none;
+        background: none;
+    }
+}

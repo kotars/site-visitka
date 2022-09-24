@@ -1,0 +1,15 @@
+.profile__photo {
+  background: url("../img/profile/IMG_1159.JPG") no-repeat;
+  @include back-center;
+  width: 40%;
+  margin-left: 5%;
+  height: 60vh;
+}
+
+@media (max-width: 48em) {
+  .profile__photo {
+    width: 100%;
+    margin-left: 0%;
+    height: 80vh;
+  }
+}

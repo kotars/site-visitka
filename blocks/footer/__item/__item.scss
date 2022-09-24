@@ -1,0 +1,17 @@
+.footer__item{
+    width: 3.5rem;
+    height: 3.5rem;
+    &:first-child{
+        background: url('../img/footer/telegram_icon_131945.svg') no-repeat;
+        @include back-center;
+    }
+    &:nth-child(2){
+        background: url('../img/footer/vk-svgrepo-com.svg') no-repeat;
+        @include back-center;
+        margin: 0 5%;
+    }
+    &:last-child{
+        background: url('../img/footer/whatsapp_black_logo_icon_147050.svg') no-repeat;
+        @include back-center;
+    }
+}

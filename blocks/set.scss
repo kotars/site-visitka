@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+html {
+  color: #000000;
+  font-size: 0.6944444vw;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  padding: 0;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #FFFFFF;
+}
+
+button,
+a,
+input,
+textarea {
+  outline: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
+  }
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #000000;
+
+}
+
+input,
+textarea {
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+
+}
+
+input,
+button {
+  outline: none;
+}
+
+button {
+  border: none;
+  color: inherit;
+  text-align: inherit;
+  padding: 0;
+  background-color: inherit;
+  text-rendering: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: inherit
+}
+
+@media (max-width:48em) {
+  html {
+    font-size: 1.5625vw;
+    -webkit-text-size-adjust: none;
+  }
+}

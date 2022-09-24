@@ -1,0 +1,15 @@
+.advantage__back {
+  width: 71.9rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 3.5rem;
+  padding: 2.6rem;
+}
+
+@media (max-width:48em){
+  .advantage__back {
+    width: 100%;
+  box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.25);
+
+  }
+}

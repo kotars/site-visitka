@@ -1,0 +1,15 @@
+.nav {
+  background: white;
+  padding: 2.4rem 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // position: fixed;
+  width: 100%;
+}
+
+@media (max-width: 48em) {
+  .nav {
+    padding: 2rem 1rem;
+  }
+}

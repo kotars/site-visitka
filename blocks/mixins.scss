@@ -1,0 +1,12 @@
+@mixin font ($weight, $size, $height) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+
+
+@mixin back-center {
+    background-size:cover ;
+    background-position-y: center;
+    background-position-x: center;
+}

@@ -1,0 +1,10 @@
+.nav__items{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+@media (max-width:48em){
+    .nav__items{
+        display: none;
+    }
+}
