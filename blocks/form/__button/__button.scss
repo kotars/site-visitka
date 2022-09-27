@@ -1,0 +1,12 @@
+.form__button{
+    width: 100%;
+    border-radius: 3rem;
+    border: .3rem solid rgba(0,0,0,0);
+    padding: 2rem 0;
+    margin-top: 3rem;
+
+    background: black;
+    @include font(300, 2rem, 1.33);
+    color: white;
+    text-align: center;
+}

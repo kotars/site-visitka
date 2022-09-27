@@ -1,0 +1,9 @@
+.form__item{
+    flex-direction: column;
+    width:100%;
+    margin: auto;
+    align-items: center;
+    &:last-child{
+        align-items:flex-start
+    }
+}

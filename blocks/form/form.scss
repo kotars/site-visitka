@@ -1,11 +1,10 @@
 .form{
-    background: url('../img/form/img-321.png') no-repeat;
-    @include back-center;
     padding: 20rem 40rem;
+    z-index: 1000;
+    position: relative;
 }
 @media (max-width:48em) {
     .form{
-        background-position-x: left;
-        padding: 20rem 1rem;
+        padding: 5rem 1.5rem;
     }
 }

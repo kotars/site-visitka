@@ -2,233 +2,242 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="js/script.min.js"></script>
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/aos.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-  <title>Чумаков Дмитрий</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/script.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/just-validate.production.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <title>Чумаков Дмитрий</title>
 </head>
 
 <body>
-  <script>
-    AOS.init();
-</script>
-  <nav class="nav">
-    <a href="#" class="nav__logo nav__logo--color">
-      Чумаков Дмитрий
-      <div class="nav__back-color"></div>
-    </a>
-    <div class="nav__items">
-      <a href="#advant" class="nav__item">Чем полезен</a>
-      <a href="#myproject" class="nav__item">Портфолио</a>
-      <a href="#study" class="nav__item">Где учился</a>
-      <a href="#contact" class="nav__item">Контакты</a>
-    </div>
-    <div class="menu-gamburg">
-      <input id="menu-toggle" type="checkbox" />
-      <label class="nav__container" for="menu-toggle">
-        <div class="nav__button"></div>
-      </label>
-      <ul class="menu-gamburg__ul">
-        <li><a href="#advant" class="nav__item">Чем полезен</a></li>
-        <li><a href="#myproject" class="nav__item">Портфолио</a></li>
-        <li><a href="#study" class="nav__item">Где учился</a></li>
-        <li><a href="#contact" class="nav__item">Контакты</a>></li>
-      </ul>
-    </div>
-  </nav>
-  <header class="profile">
-    <div class="profile__about-me" data-aos="flip-left" data-aos-duration="2000">
-      <h1 class="profile__name">
-        Привет, я Дмитрий Чумаков -
-        <br />
-        разработчик сайтов
-      </h1>
-      <div class="profile__description">
-        Эту страницу я создал специально для потенциальных работодателей:
-        здесь есть мои проекты из портфолио, описание моих навыков и
-        контактные данные
-      </div>
-    </div>
-    <div class="profile__photo" loading="lazy"></div>
-  </header>
-  <main>
-    <section class="advantage">
-      <div class="advantage__card" data-aos="zoom-in-right" id="advant">
-        <div class="advantage__back">
-          <div class="advantage__header">Чем полезен</div>
-          <div class="advantage__description">
-            Умею верстать сайты из дизайн-макетов. Работал с макетами PSD,
-            Adobe XD и figma. Знаю, как правильно экспортировать графику из
-            макета, как доставать шрифты и узнавать точные отступы. Например,
-            не буду вырезать иконку в PNG, если есть возможность достать SVG.
-            Я не создаю макеты сайтов, а работаю с тем, что предоставил
-            дизайнер. Но могу сделать дизайн мобильной версии сайта на основе
-            макета с компьютерной версии.
-          </div>
+    <script>
+        AOS.init();
+    </script>
+    <nav class="nav">
+        <a href="#" class="nav__logo nav__logo--color">
+            Чумаков Дмитрий
+            <div class="nav__back-color"></div>
+        </a>
+        <div class="nav__items">
+            <a href="#advant" class="nav__item">Чем полезен</a>
+            <a href="#myproject" class="nav__item">Портфолио</a>
+            <a href="#study" class="nav__item">Где учился</a>
+            <a href="#contact" class="nav__item">Контакты</a>
         </div>
-      </div>
-      <div class="advantage__card" data-aos="zoom-in-left">
-        <div class="advantage__back">
-          <div class="advantage__header">Пиксель в пиксель</div>
-          <div class="advantage__description">
-            Понимаю, как важно сделать верстку точно по макету, поэтому
-            верстаю пиксель в пиксель, если потребуется. В процессе работы,
-            накладываю дизайн-макет на верстку, чтобы убедиться, что
-            расхождений нет.
-          </div>
+        <div class="menu-gamburg">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="nav__container" for="menu-toggle">
+                <div class="nav__button"></div>
+            </label>
+            <ul class="menu-gamburg__ul">
+                <li><a href="#advant" class="nav__item">Чем полезен</a></li>
+                <li><a href="#myproject" class="nav__item">Портфолио</a></li>
+                <li><a href="#study" class="nav__item">Где учился</a></li>
+                <li><a href="#contact" class="nav__item">Контакты</a>></li>
+            </ul>
         </div>
-      </div>
-      <div class="advantage__card" data-aos="zoom-in-right">
-        <div class="advantage__back">
-          <div class="advantage__header">Семантическая вёрстка</div>
-          <div class="advantage__description">
-            Делаю семантически правильную разметку, без проблем прохожу
-            проверку кода на валидность без ошибок. Понимаю, как расставить
-            теги и заголовки на странице. После меня SEO-специалисту не нужно
-            будет переделывать работу.
-          </div>
+    </nav>
+    <header class="profile">
+        <div class="profile__about-me" data-aos="flip-left" data-aos-duration="2000">
+            <h1 class="profile__name">
+                Привет, я Дмитрий Чумаков -
+                <br />
+                разработчик сайтов
+            </h1>
+            <div class="profile__description">
+                Эту страницу я создал специально для потенциальных работодателей:
+                здесь есть мои проекты из портфолио, описание моих навыков и
+                контактные данные
+            </div>
         </div>
-      </div>
-      <div class="advantage__card" data-aos="zoom-in-left">
-        <div class="advantage__back">
-          <div class="advantage__header">Адаптивная вёрстка</div>
-          <div class="advantage__description">
-            Верстаю адаптивно, верстку проверяю на планшете, смартфонфе и
-            большом телевизоре. Еще у меня есть подписка на browserstack,
-            поэтому если нужно быстро узнать, как сайт ведет себя на пятом
-            айфоне - посмотрю за 5 минут, сделаю скриншот и исправлю недочеты.
-          </div>
-        </div>
-      </div>
-      <div class="advantage__card" data-aos="zoom-in-right">
-        <div class="advantage__back">
-          <div class="advantage__header">Стили на препроцессорах</div>
-          <div class="advantage__description">
-            Стили пишу с помощью препроцессора SASS, поэтому получается писать
-            стили быстро, легко находить нужный участок кода и делать гибкие
-            настройки. Например, если стиль повторяется два раза - пишу миксин
-            и дальше использую уже его вместо копи пасты.
-          </div>
-        </div>
-      </div>
-      <div class="advantage__card" data-aos="zoom-in-left">
-        <div class="advantage__back">
-          <div class="advantage__header">Хостинг, домен, Git и т.д.</div>
-          <div class="advantage__description">
-            Умею настраивать хостинг, привязывать домен и регистрировать
-            SSL-сертификат. Сам проект обычно храню в репозитории на Github.
-            Правда, еще не участвовал в командной разработке, поэтому гит знаю
-            на уровне: сделать репозиторий, клонировать его, внести изменения,
-            сохранить коммиты и отправить пуш.
-          </div>
-        </div>
-      </div>
-      <div class="advantage__info" data-aos="zoom-in" id="study">Где учился</div>
-      <div></div>
-      <div class="advantage__card" data-aos="zoom-in-right">
-        <div class="advantage__back">
-          <div class="advantage__header">Самостоятельно</div>
-          <div class="advantage__description">
-            Начал с просмотра видеоуроков на Youtube: смотрел, как автор пишет
-            код, потом повторял. Затем начал писать код сам, просил обратной
-            связи в чатах, где были более опытные разработчики. Проходил кучу
-            разных тестов по HTML, CSS, JS и т.д. на специальных сайтах.
-          </div>
-        </div>
-      </div>
-      <div class="advantage__card" data-aos="zoom-in-left">
-        <div class="advantage__back">
-          <div class="advantage__header">Курсы</div>
-          <div class="advantage__description">
-            Я обучался 3 года в учебном центре “Информационные технологии”.
-            Получил свидетельство о профессиональном образовании. Мне была
-            присвоена квалификация “Оператор электронно-вычислительных и
-            вычислительных машин 2 разряда”. Я овладел разлчными дисциплинами:
-            устройство ПК; MS Word, MS Excel; компьютерная графика;
-            web-дизайн; программирование, СУБД; основы рыночной экономики.
-          </div>
-        </div>
-        <div class="advantage__back">
-          <div class="advantage__description">
-            Также прошел 7 недельный интенсивный курс по верстке в Global
-            Academy. За время курса освоил мноожество различных технологий.
-            Оплатил обучение сам. Для этого копил деньги, подрабатывал дополнительно.
-            Если найду еще хорошие курсы, которые повышают квалификацию,
-            обязательно их пройду.
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="project" id="myproject" >
-      <div class="project__header">Мои проследние проекты</div>
-      <div class="project__items">
-        <div class="project__item"data-aos="fade-top">
-          <div class="project__work"></div>
-          <div class="project__name">
-            <a href="https://github.com/kotars/workout" class="project__link">WorkOut</a>
-          </div>
-        </div>
-        <div class="project__item"data-aos="fade-top">
-          <div class="project__work"></div>
-          <div class="project__name">
-            <a href="https://github.com/kotars/samuraioffice" class="project__link">
-              SamuraiOffice
-            </a>
-          </div>
-        </div>
+        <div class="profile__photo"></div>
+    </header>
+    <main>
+        <section class="advantage">
+            <div class="advantage__card" data-aos="zoom-in-right" id="advant">
+                <div class="advantage__back">
+                    <div class="advantage__header">Чем полезен</div>
+                    <div class="advantage__description">
+                        Умею верстать сайты из дизайн-макетов. Работал с макетами PSD,
+                        Adobe XD и figma. Знаю, как правильно экспортировать графику из
+                        макета, как доставать шрифты и узнавать точные отступы. Например,
+                        не буду вырезать иконку в PNG, если есть возможность достать SVG.
+                        Я не создаю макеты сайтов, а работаю с тем, что предоставил
+                        дизайнер. Но могу сделать дизайн мобильной версии сайта на основе
+                        макета с компьютерной версии.
+                    </div>
+                </div>
+            </div>
+            <div class="advantage__card" data-aos="zoom-in-left">
+                <div class="advantage__back">
+                    <div class="advantage__header">Пиксель в пиксель</div>
+                    <div class="advantage__description">
+                        Понимаю, как важно сделать верстку точно по макету, поэтому
+                        верстаю пиксель в пиксель, если потребуется. В процессе работы,
+                        накладываю дизайн-макет на верстку, чтобы убедиться, что
+                        расхождений нет.
+                    </div>
+                </div>
+            </div>
+            <div class="advantage__card" data-aos="zoom-in-right">
+                <div class="advantage__back">
+                    <div class="advantage__header">Семантическая вёрстка</div>
+                    <div class="advantage__description">
+                        Делаю семантически правильную разметку, без проблем прохожу
+                        проверку кода на валидность без ошибок. Понимаю, как расставить
+                        теги и заголовки на странице. После меня SEO-специалисту не нужно
+                        будет переделывать работу.
+                    </div>
+                </div>
+            </div>
+            <div class="advantage__card" data-aos="zoom-in-left">
+                <div class="advantage__back">
+                    <div class="advantage__header">Адаптивная вёрстка</div>
+                    <div class="advantage__description">
+                        Верстаю адаптивно, верстку проверяю на планшете, смартфонфе и
+                        большом телевизоре. Еще у меня есть подписка на browserstack,
+                        поэтому если нужно быстро узнать, как сайт ведет себя на пятом
+                        айфоне - посмотрю за 5 минут, сделаю скриншот и исправлю недочеты.
+                    </div>
+                </div>
+            </div>
+            <div class="advantage__card" data-aos="zoom-in-right">
+                <div class="advantage__back">
+                    <div class="advantage__header">Стили на препроцессорах</div>
+                    <div class="advantage__description">
+                        Стили пишу с помощью препроцессора SASS, поэтому получается писать
+                        стили быстро, легко находить нужный участок кода и делать гибкие
+                        настройки. Например, если стиль повторяется два раза - пишу миксин
+                        и дальше использую уже его вместо копи пасты.
+                    </div>
+                </div>
+            </div>
+            <div class="advantage__card" data-aos="zoom-in-left">
+                <div class="advantage__back">
+                    <div class="advantage__header">Хостинг, домен, Git и т.д.</div>
+                    <div class="advantage__description">
+                        Умею настраивать хостинг, привязывать домен и регистрировать
+                        SSL-сертификат. Сам проект обычно храню в репозитории на Github.
+                        Правда, еще не участвовал в командной разработке, поэтому гит знаю
+                        на уровне: сделать репозиторий, клонировать его, внести изменения,
+                        сохранить коммиты и отправить пуш.
+                    </div>
+                </div>
+            </div>
+            <div class="advantage__info" data-aos="zoom-in" id="study">Где учился</div>
+            <div></div>
+            <div class="advantage__card" data-aos="zoom-in-right">
+                <div class="advantage__back">
+                    <div class="advantage__header">Самостоятельно</div>
+                    <div class="advantage__description">
+                        Начал с просмотра видеоуроков на Youtube: смотрел, как автор пишет
+                        код, потом повторял. Затем начал писать код сам, просил обратной
+                        связи в чатах, где были более опытные разработчики. Проходил кучу
+                        разных тестов по HTML, CSS, JS и т.д. на специальных сайтах.
+                    </div>
+                </div>
+            </div>
+            <div class="advantage__card" data-aos="zoom-in-left">
+                <div class="advantage__back">
+                    <div class="advantage__header">Курсы</div>
+                    <div class="advantage__description">
+                        Я обучался 3 года в учебном центре “Информационные технологии”.
+                        Получил свидетельство о профессиональном образовании. Мне была
+                        присвоена квалификация “Оператор электронно-вычислительных и
+                        вычислительных машин 2 разряда”. Я овладел разлчными дисциплинами:
+                        устройство ПК; MS Word, MS Excel; компьютерная графика;
+                        web-дизайн; программирование, СУБД; основы рыночной экономики.
+                    </div>
+                </div>
+                <div class="advantage__back">
+                    <div class="advantage__description">
+                        Также прошел 7 недельный интенсивный курс по верстке в Global
+                        Academy. За время курса освоил мноожество различных технологий.
+                        Оплатил обучение сам. Для этого копил деньги, подрабатывал дополнительно.
+                        Если найду еще хорошие курсы, которые повышают квалификацию,
+                        обязательно их пройду.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project" id="myproject">
+            <div class="project__header">Мои проследние проекты</div>
+            <div class="project__items">
+                <div class="project__item" data-aos="fade-top">
+                    <div class="project__work"></div>
+                    <div class="project__name">
+                        <a href="https://github.com/kotars/workout" class="project__link">WorkOut</a>
+                    </div>
+                </div>
+                <div class="project__item" data-aos="fade-top">
+                    <div class="project__work"></div>
+                    <div class="project__name">
+                        <a href="https://github.com/kotars/samuraioffice" class="project__link">
+                            SamuraiOffice
+                        </a>
+                    </div>
+                </div>
 
-        <div class="project__item"data-aos="fade-top">
-          <div class="project__work"></div>
-          <div class="project__name">
-            <a href="https://github.com/kotars/lik-medecine" class="project__link">Лик-Медицина</a>
-          </div>
+                <div class="project__item" data-aos="fade-top">
+                    <div class="project__work"></div>
+                    <div class="project__name">
+                        <a href="https://github.com/kotars/lik-medecine" class="project__link">Лик-Медицина</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="form form--style">
+            <div class="form__wrapper form__wrapper--style">
+                <h3 class="form__header">Связаться со мной</h3>
+                <form action="#" method="POST" class="form__elements">
+                    <div class="form__item">
+                        <label for="name" class="form__label">
+                            <input type="text" id="name" name="user-name" class="form__input form__input--style"
+                                placeholder="Ваше имя">
+                        </label>
+                        <label for="telephone" class="form__label">
+                            <input type="tel" id="telephone" name="user-phone" class="form__input form__input--style"
+                                placeholder="Телефон для связи">
+                        </label>
+                        <button type="submit" class="form__button">Заказать
+                            звонок</button>
+                    </div>
+                    <div class="form__item" id="item">
+                        <input type="checkbox" id="check" class="form__checkbox">
+                        <label for="check" class="form__text form__text--color">
+                            <p><span>Даю свое согласие</span> на обработку личных данных</p>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contact">
+        <a href="#" class="footer__logo footer__logo--color">
+            Чумаков Дмитрий
+            <div class="footer__back-color"></div>
+        </a>
+        <div class="footer__description">© Все права защищены.</div>
+        <div class="footer__items">
+            <a href="https://t.me/chymnoidoctor" class="footer__item"></a>
+            <a href="https://vk.com/parabolaaa" class="footer__item"></a>
+            <a href="https://wa.me/89628195790" class="footer__item"></a>
         </div>
-      </div>
-      </div>
-    </section>
-    <section class="form">
-      <div class="form__container">
-        <div class="form__header">Связаться со мной</div>
-        <form action="#" method="post" class="form__items">
-          <label for="name">
-            <input type="text" id="name" name="user-name" class="form__input" placeholder="Ваше имя" />
-          </label>
-          <label for="email">
-            <input type="email" id="email" name="user-email" class="form__input" placeholder="Ваше Email" /></label>
-          <label for="phone">
-            <input type="tel" id="telephone" name="user-phone" class="form__input" placeholder="Ваш телефон" />
-          </label>
-          <button type="submit" class="form__btn">
-            Оформить заказ
-          </button>
-        </form>
-      </div>
-
-    </section>
-  </main>
-  <footer class="footer" id="contact">
-    <a href="#" class="footer__logo footer__logo--color">
-      Чумаков Дмитрий
-      <div class="footer__back-color"></div>
-    </a>
-    <div class="footer__description">© Все права защищены.</div>
-    <div class="footer__items">
-      <a href="https://t.me/chymnoidoctor" class="footer__item"></a>
-      <a href="https://vk.com/parabolaaa" class="footer__item"></a>
-      <a href="https://wa.me/89628195790" class="footer__item"></a>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>

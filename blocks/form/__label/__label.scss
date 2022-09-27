@@ -1,0 +1,53 @@
+.form__label {
+    width: 100%;
+    height: 6rem;
+    
+
+    // z-index: 5;
+
+    &:nth-child(1) {
+        .form__input--style {
+            background: url('../img/form/user.svg');
+            background-repeat: no-repeat;
+            background-size: 2.4rem;
+            background-position-y: 50%;
+            background-position-x: 1.4rem;
+        }
+    }
+
+    &:nth-child(2) {
+
+        .form__input--style {
+            background: url('../img/form/phone.svg');
+            background-repeat: no-repeat;
+            background-size: 2.4rem;
+            background-position-y: 50%;
+            background-position-x: 1.4rem;
+        }
+    }
+}
+
+@media (max-width:48em) {
+    .form__label {
+
+        &:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+
+        &:nth-child(1) {
+            .form__input--style {
+                background-size: 3rem;
+                background-position-y: 50%;
+                background-position-x: 3rem;
+            }
+        }
+
+        &:nth-child(2) {
+            .form__input--style {
+                background-size: 3rem;
+                background-position-y: 50%;
+                background-position-x: 3rem;
+            }
+        }
+    }
+}

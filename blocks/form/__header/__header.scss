@@ -1,4 +1,15 @@
 .form__header{
-    @include font(600, 4rem ,117%);
-    margin-bottom: 4rem;
+    @include font(600, 4.4rem, 120%);
+    max-width: 58.4rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width:48em) {
+    .form__header{
+        width: 55.4rem;
+        text-align: center;
+    @include font(600, 5.6rem, 120%);
+    margin-bottom: 1.2rem;
+
+    }
 }
